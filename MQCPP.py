@@ -59,6 +59,8 @@ def model_standard_formulation(gamma, V, E, UB):
 
     model.obj = pe.Objective(expr=sum(model.y[i] for i in model.i))
 
+    return model
+
 
 def model_using_size_decomposition(gamma, V, E, UB, UB_k):
     model = pe.ConcreteModel()
@@ -104,6 +106,7 @@ def model_using_size_decomposition(gamma, V, E, UB, UB_k):
     model.twenty_one_constraint = pe.Constraint(model.i, rule=twenty_one_constraint_func)
 
     model.obj = pe.Objective(expr=sum(model.y[i] for i in model.i))
+    return model
 
 
 def model_formulation_by_representatives(gamma, V, UB_k):
@@ -150,6 +153,7 @@ def model_formulation_by_representatives(gamma, V, UB_k):
     model.thirty_constraint = pe.Constraint(model.v, rule=thirty_constraint_func)
 
     model.obj = pe.Objective(expr=sum(model.X[u, u] for u in model.v))
+    return model
 
 
 def model_representatives_using_decomposition(gamma, V, UB_k):
@@ -170,6 +174,7 @@ def model_representatives_using_decomposition(gamma, V, UB_k):
 
     def twenty_six_constraint_func(model, u, v):
         return model.X[u, v] <= model.X[u, u]
+
     def thirty_six_constraint_func(model, u, v, v_1):
         return model.O[u, v, v_1] <= model.X[u, v]
 
@@ -195,3 +200,4 @@ def model_representatives_using_decomposition(gamma, V, UB_k):
     model.forty_constraint = pe.Constraint(model.v, rule=forty_constraint_func)
 
     model.obj = pe.Objective(expr=sum(model.X[u, u] for u in model.v))
+    return model

@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="df0b45ac-31c7-4e82-9ba2-4f6627610728" name="Changes" comment="step 3">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MQCPP.py" beforeDir="false" afterPath="$PROJECT_DIR$/MQCPP.py" afterDir="false" />
-    </list>
+    <list default="true" id="df0b45ac-31c7-4e82-9ba2-4f6627610728" name="Changes" comment="step 4" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -83,13 +80,22 @@
       <option name="project" value="LOCAL" />
       <updated>1727205931379</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="step 4">
+      <option name="closed" value="true" />
+      <created>1727298832771</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1727298832771</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="step 1" />
     <MESSAGE value="step 2" />
     <MESSAGE value="step 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="step 3" />
+    <MESSAGE value="step 4" />
+    <option name="LAST_COMMIT_MESSAGE" value="step 4" />
   </component>
 </project>
